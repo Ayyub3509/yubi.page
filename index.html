@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Ayyubi - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        section.bg-light {
+            background-color: #000 !important;
+        }
+
+        #about.bg-light {
+            background: linear-gradient(180deg, #0d3a61 0%, #071d3b 100%) !important;
+        }
+
+        .navbar.bg-dark,
+        footer.bg-dark {
+            background-color: #000 !important;
+        }
+
+        .card {
+            background-color: #111;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .form-control {
+            background-color: #111;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .hero-container {
+            max-width: 640px;
+        }
+
+        .hero-section {
+            min-height: 90vh;
+            padding-bottom: 0;
+        }
+
+        #wave-container,
+        #wave-container-2 {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            pointer-events: none;
+        }
+
+        #wave-container {
+            bottom: 0;
+            height: 220px;
+        }
+
+        #wave-container-2 {
+            top: -20px;
+            height: 180px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Al Ayyubi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-effect" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center position-relative overflow-hidden py-4">
+        <div id="wave-container"></div>
+        <div class="container text-center position-relative z-3 hero-container">
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <img src="photo.jpg" alt="Al Ayyubi" class="rounded-circle profile-img mb-4 img-fluid w-25"
+                    loading="lazy">
+                <h1 class="display-5 fw-bold mb-3 animated-title">Yubs</h1>
+                <p class="text-muted fs-6 mb-4">sedang sibuk 🚀</p>
+                <a href="#about" class="btn btn-primary btn-sm me-2 btn-hover">Explore More</a>
+                <a href="#contact" class="btn btn-outline-primary btn-sm btn-hover">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="mb-4 section-title">About Me</h2>
+                    <p class="lead mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card card-hover shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Skills</h5>
+                            <p class="card-text">Web Development • Design • Problem Solving • Creative Thinking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title" data-aos="fade-up" data-aos-duration="1000">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="card card-hover h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Project One</h5>
+                            <p class="card-text">Check out our first amazing project with innovative features.</p>
+                            <a href="#" class="btn btn-sm btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="card card-hover h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Two</h5>
+                            <p class="card-text">Discover our second project with cutting-edge design.</p>
+                            <a href="#" class="btn btn-sm btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card card-hover h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Three</h5>
+                            <p class="card-text">Experience our third project with exceptional results.</p>
+                            <a href="#" class="btn btn-sm btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light position-relative overflow-hidden">
+        <div id="wave-container-2"></div>
+        <div class="container position-relative z-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="text-center mb-5 section-title">Get In Touch</h2>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-input" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 btn-hover">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">Visit my Instagram: <a href="https://www.instagram.com/el.yubii?igsh=d2sxcW52NWE2OXFv" class="text-white text-decoration-underline" target="_blank" rel="noopener noreferrer">@el.yubii</a></p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+
+        const waveContainer = document.getElementById('wave-container');
+        if (waveContainer) {
+            waveContainer.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                    style="position: absolute; bottom: -20px; left: 0; width: 100%; height: 260px;">
+                    <path fill="#0d3a61" fill-opacity="0.25"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"/>
+                    <path fill="#0d3a61" fill-opacity="0.45" transform="translate(0,15)"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"/>
+                    <path fill="#0d3a61" fill-opacity="1"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"/>
+                </svg>
+            `;
+        }
+
+        const waveContainer2 = document.getElementById('wave-container-2');
+        if (waveContainer2) {
+            waveContainer2.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                    style="position: absolute; top: -40px; left: 0; width: 100%; height: 220px;">
+                    <path fill="#0d3a61" fill-opacity="0.12"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"/>
+                    <path fill="#0d3a61" fill-opacity="0.18" transform="translate(0,12)"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,320L1364.2,320L1364.2,320L1288.4,320L1288.4,320L1212.6,320L1212.6,320L1136.8,320L1136.8,320L1061.1,320L1061.1,320L985.3,320L985.3,320L909.5,320L909.5,320L833.7,320L833.7,320L757.9,320L757.9,320L682.1,320L682.1,320L606.3,320L606.3,320L530.5,320L530.5,320L454.7,320L454.7,320L378.9,320L378.9,320L303.2,320L303.2,320L227.4,320L227.4,320L151.6,320L151.6,320L75.8,320L75.8,320L0,320L0,320Z"/>
+                    <path fill="#0d3a61" fill-opacity="1"
+                        d="M0,224L0,32L75.8,32L75.8,64L151.6,64L151.6,192L227.4,192L227.4,160L303.2,160L303.2,256L378.9,256L378.9,288L454.7,288L454.7,224L530.5,224L530.5,224L606.3,224L606.3,160L682.1,160L682.1,224L757.9,224L757.9,96L833.7,96L833.7,160L909.5,160L909.5,32L985.3,32L985.3,96L1061.1,96L1061.1,224L1136.8,224L1136.8,224L1212.6,224L1212.6,32L1288.4,32L1288.4,192L1364.2,192L1364.2,224L1440,224L1440,0L1364.2,0L1364.2,0L1288.4,0L1288.4,0L1212.6,0L1212.6,0L1136.8,0L1136.8,0L1061.1,0L1061.1,0L985.3,0L985.3,0L909.5,0L909.5,0L833.7,0L833.7,0L757.9,0L757.9,0L682.1,0L682.1,0L606.3,0L606.3,0L530.5,0L530.5,0L454.7,0L454.7,0L378.9,0L378.9,0L303.2,0L303.2,0L227.4,0L227.4,0L151.6,0L151.6,0L75.8,0L75.8,0L0,0L0,0Z"/>
+                </svg>
+            `;
+        }
+    </script>
+</body>
+
+</html>
